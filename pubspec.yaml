@@ -1,0 +1,31 @@
+name: flutter_closet
+description: >-
+  Closet - a wardrobe & outfit planner. Catalog every piece you own, build
+  named outfits from them, plan what to wear on the calendar, and track
+  cost-per-wear and category stats.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management. ClosetRepository is injected through a Riverpod
+  # Provider so the UI layer never talks to shared_preferences directly.
+  flutter_riverpod: ^2.6.0
+
+  # Local persistence for the wardrobe, outfits, and the day-plan (stored
+  # as JSON).
+  shared_preferences: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

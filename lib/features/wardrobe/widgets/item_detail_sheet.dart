@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/date_format.dart';
 import '../../../core/constants/money_format.dart';
 import '../../../core/logic/stats.dart';
+import '../../../core/models/clothing_category.dart';
 import '../../../core/models/clothing_item.dart';
 import '../../../core/widgets/item_art.dart';
 import '../../../data/providers.dart';

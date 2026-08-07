@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/models/clothing_category.dart';
 import '../../core/widgets/empty_state.dart';
 import '../../data/providers.dart';
 import 'widgets/add_item_sheet.dart';

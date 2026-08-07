@@ -1,6 +1,7 @@
 /// Small calendar-date helpers shared by the pure logic layer. A "calendar
 /// date" here means local midnight for that year/month/day - no time
 /// component, no timezone math. Nothing in this file depends on Flutter.
+library;
 
 /// Strips the time-of-day component, returning local midnight for the same
 /// calendar date.

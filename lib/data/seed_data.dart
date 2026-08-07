@@ -1,9 +1,3 @@
-import '../core/logic/date_math.dart';
-import '../core/models/clothing_category.dart';
-import '../core/models/clothing_item.dart';
-import '../core/models/outfit.dart';
-import '../core/models/plan_entry.dart';
-
 /// Deterministic first-run demo data for Closet: 20 wardrobe items spread
 /// across all 5 categories, 4 saved outfits built from them, and a handful
 /// of plan entries (yesterday and 4 days ago already worn, today assigned
@@ -22,6 +16,12 @@ import '../core/models/plan_entry.dart';
 /// seeded outfit (a top, two outerwear pieces, and one accessory) carry
 /// their own independent, still-realistic wear history.
 library;
+
+import '../core/logic/date_math.dart';
+import '../core/models/clothing_category.dart';
+import '../core/models/clothing_item.dart';
+import '../core/models/outfit.dart';
+import '../core/models/plan_entry.dart';
 
 const String _oxfordShirtId = 'item-oxford-shirt';
 const String _silkBlouseId = 'item-silk-blouse';

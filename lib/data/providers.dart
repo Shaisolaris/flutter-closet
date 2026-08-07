@@ -94,7 +94,7 @@ final selectedCategoryProvider = StateProvider<ClothingCategory?>((ref) => null)
 final filteredItemsProvider = Provider<List<ClothingItem>>((ref) {
   final items = ref.watch(itemsProvider).valueOrNull ?? const <ClothingItem>[];
   final category = ref.watch(selectedCategoryProvider);
-  final filtered = category == null ? items : items.where((item) => item.category == category).toList();
+  final filtered = category == null ? List<ClothingItem>.of(items) : items.where((item) => item.category == category).toList();
   return filtered..sort((a, b) => a.name.compareTo(b.name));
 });
 
